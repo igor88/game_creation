@@ -1,0 +1,35 @@
+// JavaScript Document
+
+$(document).ready(function(e) {
+
+
+
+	/* COMMON */
+	
+	// open close ui menu
+	
+	$('.menu').find('.title').on('click',function(){
+		var This = $(this).parent('.menu');
+		expandCollapseUiMenu(This);
+	});
+    
+	// toggle view 
+	
+	$('a.toggle-view').click(function(){
+		toggleView();
+	});
+
+	/* TOOLS */
+
+	toolsMenuRender();
+	
+	/* SCREENS */
+	
+	screensSliderRender();
+
+	/* INTERFACE MENUS */
+	
+	$('.properties').find('select').selectmenu({width:'114px',menuWidth:'114px'});	
+
+
+});

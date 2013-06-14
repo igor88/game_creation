@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* GENERAL */
+
+* {border:0px; margin:0px; padding:0px; outline:none;}
+ul {list-style-type:none;}
+ul li {float:left;}
+div {float:left;}
+
+/* COMMON */
+
+.menu .title {font-size:12px; font-weight:bold; cursor:pointer;}
+.menu .title span {display:block; float:left; margin: 0 0 0 10px;}
+.menu .title span.text {height:34px; line-height:34px; margin: 0 0 0 5px;}
+.menu .title span.arrow {background:url(../images/arrow_white_right_big.png) left center no-repeat;width:11px; height:11px; margin-top:11px;}
+.menu .title span.arrow.down {background:url(../images/arrow_white_down_big.png) center center no-repeat;}
+
+.menu .list {position:relative; overflow:hidden;}
+
+.ui-selectmenu-menu ul {background: url(../images/select_menu_ul_bg.png) bottom no-repeat;padding: 0 0 5px 0;margin-top: -3px;}
+.ui-selectmenu-menu ul li {background:url(../images/select_menu_li_bg.png); width:100%;}
+.ui-selectmenu-menu li a, .ui-selectmenu-status {text-decoration: none;color: white;font-size: 11px;font-weight: bold;padding: 2px 12px;}
+
+/* TEMPLATE */
+
+body {color:white; font-size:12px; font-family:Arial, Helvetica, sans-serif;}
+#wrapper {background:url(../images/bg.png); width:1280px; height:795px; float:none; margin: 0 auto;}
+
+#title {width:100%; height:29px; line-height:29px; text-indent:15px; margin: 0 0 5px 0; font-weight:bold;}
+#main {width: 1267px;height: 727px;margin: 4px 7px 20px 6px;}
+
+/** TOP **/
+
+#main #top {background:url(../images/menu_top.png); width:1265px; height:47px; padding:1px;}
+#main #top .menu {width:100%; height:47px;}
+#main #top .menu ul {float:left; padding: 0 0 0 15px;}
+#main #top .menu ul li {height:21px; line-height:21px; padding:21px 0 0 0; background:url(../images/top_menu_li.png) top center no-repeat; margin:5px 0 0 0; width:80px; text-align:center;}
+#main #top .menu ul li + li {margin-left:29px; cursor:pointer;}
+#main #top .menu ul li a {cursor:pointer;}
+
+/** LEFT - TOOL MENU **/
+
+#main #left {
+width: 107px;
+padding: 6px 7px 6px 0;
+}
+#main #left .tools {width:107px; border-bottom:1px solid black;}
+#main #left .tools + .tools {margin-top:6px;}
+#main #left .tools .title {background:url(../images/menu_tools_top_bg.png); width:107px; height:34px;}
+#main #left .tools .list {background:url(../images/menu_tools_bg.png); width:105px; padding:0 1px; height:300px;} 
+#main #left .tools.closed .list {border-bottom:0px;}
+#main #left .tools .list a.arrow {width:41px; height:38px; left:50%; margin-left:-20px; display:block; position:absolute; cursor:pointer; z-index:100;}
+#main #left .tools .list a.arrow.up {background:url(../images/arrow_up.png); top:0px;}
+#main #left .tools .list a.arrow.down {background:url(../images/arrow_down.png);bottom:0px;}
+#main #left .tools .list .scroller {width:100%; height:240px; position:absolute; top:26px; left:0px;}
+#main #left .tools .list .scroller .jspVerticalBar {display:none;}
+#main #left .tools .list .scroller .overview {width: 100%;height: 1200px;margin-left: -9px;}
+
+.tool {width:100%; height:60px; background-position:center center; background-repeat:no-repeat; cursor:pointer;}
+.tool.movie {background-image:url(../images/icon_movie.png);}
+.tool.music {background-image:url(../images/icon_music.png);}
+.tool.photo {background-image:url(../images/icon_camera.png);}
+.tool.globe {background-image:url(../images/icon_world.png);}
+.tool.hand {background-image:url(../images/icon_hand.png);}
+.tool.wheel {background-image:url(../images/icon_f_wheel.png);}
+.tool.gamble {background-image:url(../images/icon_777.png);}
+.tool.T {background-image:url(../images/icon_t.png);}
+.tool.fb {background-image:url(../images/icon_fb.png);}
+.tool.barcode {background-image:url(../images/icon_barcode.png);}
+
+/*** MORE SCREENS ***/
+
+#main #right .screens {background:url(../images/small_screens_bg.png); height:197px; width:1129px; padding:0 0 0 24px; position:relative;}
+#main #right .screens a.arrow {height:54px; width:43px; top:50%; margin-top:-27px; z-index:100; cursor:pointer; display:block; position:absolute;}
+#main #right .screens a.left {background:url(../images/arrow_left.png); left:0px;}
+#main #right .screens a.right {background:url(../images/arrow_right.png); right:0px;}
+
+#main #right .screens .scroller {width:1075px; height:197px; position:relative; overflow:hidden;}
+#main #right .screens .overview { height:197px; width:2000px;}
+
+#main #right .screens .screen {width:224px; height:197px; padding-right:26px;padding-left:25px; }
+#main #right .screens .screen + .screen {background:url(../images/small_screens_item_sep.png) left center no-repeat;}
+#main #right .screens .screen .number {height:21px; line-height:21px; font-size:12px; width:100%; text-align:center;}
+
+/** RIGHT **/
+
+#main #right {width:1153px;}
+
+/*** INTERFACE ***/
+
+#main #right .interface { width:907px;}
+#main #right .interface .top {background:url(../images/stage_area_title_bg.png); height:33px; width:100%; display:none;}
+#main #right .interface .edit-area {
+background: url(../images/stage_area_main_bg.png);
+width: 100%;
+height: 491px;
+border: 1px solid black;
+border-top: 0px;
+border-bottom: 0px;
+}
+/*** MENUS ***/
+.menus {width:241px; padding:5px 0 0 5px;}
+.menus .menu {width:241px;}
+.menus .menu + .menu {margin:5px 0 0 0;}
+.menus .menu .title {background:url(../images/menu_right_top_bg.png); width:241px; height:34px;}
+.menus .menu .list {background:url(../images/menu_right_center_bg.png); padding:0 1px 0px 1px; position:relative;width:239px;}
+.menus .menu .list .bottom {background:url(../images/menu_right_bottom_bg.png); width:100%;position:absolute; bottom:0px; left:0px; height:4px;}
+.menus .menu .list ul {width:100%; padding:0 0 4px 0; float:left;}
+
+.menus .menu.properties .list ul li {height:31px; width:100%;}
+.menus .menu.properties .list ul li + li {border-top:1px solid black;}
+.menus .menu.properties .list ul li span {display:block; float:left; height:31px; line-height:31px; font-size:11px; font-weight:bold;}
+.menus .menu.properties .list ul li span.key {width:93px; color:#ffffff; text-align:right;}
+.menus .menu.properties .list ul li span.value {width:140px; text-align:left; padding:0 0 0 5px; color:#69bcfc;}
+.menus .menu.properties .list ul li span.value input[type="checkbox"] {margin: 7px 0 0 0;}
+.menus .menu.properties .list ul li span.value input[type="text"] {background: url(../images/input_text.png);width: 126px;height: 18px;margin: 5px 0 0 -1px;padding: 2px;color: White;font-size: 11px;font-weight: bold;text-indent: 5px;text-align: left;}
+
+.menus .menu.properties .list ul li span.value a.ui-selectmenu {background:url(../images/input_select.png); height:26px; padding:0px;}
+.menus .menu.properties .list ul li span.value a.ui-selectmenu .ui-selectmenu-status { color:white;text-indent: 9px;padding: 3px;height: 20px;line-height: 19px;width: 108px;}
+
+
+.menus .menu.assets .list {}
+.menus .menu.assets .list ul.root {width: 220px;margin: 5px 0 0 20px; padding:0px;}
+.menus .menu.assets .list ul.root li {width:100%; cursor:pointer;}
+.menus .menu.assets .list ul.root li ul {padding:0 0 0 25px;}
+.menus .menu.assets .list ul.root li span {padding:0 0 0 25px; display:block; float:left; font-size:11px; font-weight:bold; height:22px; line-height:22px; background-position:left center; background-repeat:no-repeat;}
+.menus .menu.assets .list ul.root li.dir > span {background-image:url(../images/arrow_white_right.png);}
+.menus .menu.assets .list ul.root li.dir.open > span {background-image:url(../images/arrow_white_down.png);}
+.menus .menu.assets .list ul.root li.image > span {background-image:url(../images/icon_camera_small.png);}
+.menus .menu.assets .list ul.root li.video > span {background-image:url(../images/icon_movie_small.png);} 
+
+
+/****
+	VERTICAL
+			***/
+			
+
+
+#main.vertical #right .screens {background: url(../images/small_screens_bg_vertical.png);height: 688px;width: 184px;padding: 0 0 0 0px;position: relative;}
+#main.vertical #right .screens .jspVerticalBar {display: none;}
+#main.vertical #right .screens a.arrow {height:43px; width:54px; left:50%;  margin-left:-27px; margin-top:0px; z-index:100; cursor:pointer; display:block; position:absolute;}
+#main.vertical #right .screens a.left {background:url(../images/arrow_up_big.png); top:0px;}
+#main.vertical #right .screens a.right {background: url(../images/arrow_down_big.png);top: 640px;}
+#main.vertical #right .screens .scroller {width: 156px;height: 627px;position: relative;overflow: hidden;margin: 28px 15px;}
+#main.vertical #right .screens .overview {
+height: 1630px;
+width: 156px;
+margin-left: -17px;
+}
+#main.vertical #right .screens .screen {width:156px; padding:0 0 15px 0; height:194px;	}
+#main.vertical #right .screens .screen .img {width: 100%;height: 173px;}
+#main.vertical #right .screens .screen .img img {height:100%; width:100%;}
+#main.vertical #right .screens .screen + .screen {background:url(../images/small_screens_item_sep_vertical.png) center top no-repeat;}
+
+#main.vertical #right .interface {
+width: 723px;
+}
